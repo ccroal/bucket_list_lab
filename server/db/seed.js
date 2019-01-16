@@ -1,7 +1,7 @@
 use bucketList;
 db.dropDatabase();
 
-db.list.inserMany([
+db.list.insertMany([
   {
     activity: "Sky Diving",
     location: "Anywhere",
