@@ -12,7 +12,7 @@ ListItemView.prototype.render = function (listItem) {
 
   const location = document.createElement('p')
   location.textContent = `Location: ${listItem.location}`
-  itemContainer.appendChild(activity)
+  itemContainer.appendChild(location)
 
   const when = document.createElement('p')
   when.textContent = `When: ${listItem.when}`
