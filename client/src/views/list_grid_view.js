@@ -15,7 +15,7 @@ ListGridView.prototype.bindEvents = function(){
 ListGridView.prototype.render = function(bucketlist){
   this.container.innerHTML = '';
   const bucketListView = new ListItemView(this.container);
-  bucketList.forEach((listItem) => bucketList.render(listItem));
+  bucketlist.forEach((listItem) => bucketListView.render(listItem));
 }
 
 module.exports = ListGridView;
