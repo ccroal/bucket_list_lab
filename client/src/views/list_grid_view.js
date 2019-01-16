@@ -1,7 +1,7 @@
 const PubSub = require('../helpers/pub_sub.js');
 const ListItemView = require('./list_item_view.js');
 
-const ListGirdView = function(container){
+const ListGridView = function(container){
   this.container = container;
 }
 
@@ -14,8 +14,8 @@ ListGridView.prototype.bindEvents = function(){
 
 ListGridView.prototype.render = function(bucketlist){
   this.container.innerHTML = '';
-  const bucketListView = new BucketListView(this.container);
+  const bucketListView = new ListItemView(this.container);
   bucketList.forEach((listItem) => bucketList.render(listItem));
 }
 
-module.exports = ListGirdView;
+module.exports = ListGridView;
